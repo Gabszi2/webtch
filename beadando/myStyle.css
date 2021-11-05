@@ -1,0 +1,67 @@
+
+table,td,th{
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+.boldItalic{
+    font-weight: bold;
+    font-style: italic;
+}
+#text{
+    text-indent: 50px;
+    font-size: 20px;
+}
+#text::first-line{
+    color: rosybrown;
+}
+a:visited{
+    color: black;
+}
+a{
+    color: red;
+}
+a:hover{
+    background-color: blue;
+    color: orangered;
+}
+::marker{
+    color: crimson;
+    font-size: 30px;
+}
+div > p{
+    color: aqua;
+    text-align:center;
+}
+#suprise{
+color: white;
+    display: none;
+}
+q#suprise:hover{
+    font-size: xx-large;
+}
+tr:nth-child(even) {
+    background: #CCC;
+}
+tr:nth-child(odd) {
+    background: #FFF;
+}
+table.boldItalic{
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+:required{
+    border: 2px solid red;
+}
+form {
+    margin: 0 auto;
+    width:250px;
+}
+
