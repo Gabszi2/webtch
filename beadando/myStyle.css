@@ -35,11 +35,11 @@ div > p{
     color: aqua;
     text-align:center;
 }
-#suprise{
+#hidden{
 color: white;
     display: none;
 }
-q#suprise:hover{
+q#hidden:hover{
     font-size: xx-large;
 }
 tr:nth-child(even) {
@@ -57,11 +57,10 @@ table.boldItalic{
     margin-right: auto;
     margin-left: auto;
 }
-:required{
+.required{
     border: 2px solid red;
 }
 form {
     margin: 0 auto;
     width:250px;
 }
-
