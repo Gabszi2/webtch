@@ -59,11 +59,11 @@
 <form name="myForm">
     <p style="color: red">*kötelező</p>
     <label for="lname">Keresztnév*:</label><br>
-    <input type="text" id="lname" name="lname" class="required"><br>
+    <input type="text" id="lname" name="lname" class="required" title="Kezdődjön nagybetűvel és ne tartalmazzon szóközt!"><br>
     <label for="fname">Vezetéknév*:</label><br>
-    <input type="text" id="fname" name="fname" class="required"><br>
+    <input type="text" id="fname" name="fname" class="required" title="Kezdődjön nagybetűvel és ne tartalmazzon szóközt!"><br>
     <label for="age">Kor*:</label><br>
-    <input type="number" id="age" name="age" min="0" max="110" class="required"><br>
+    <input type="number" id="age" name="age" min="0" max="110" class="required" title="0-110"><br>
     <label for="sex">Neme:</label><br>
     <select id="sex" name="sex">
         <option value="Férfi">Férfi</option>
@@ -72,7 +72,7 @@
         <option value="Dehogyisnem!">Dehogyisnem!</option>
     </select><br>
     <label for="password">Jelszó*:</label><br>
-    <input type="password" id="password" name="password" class="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+    <input type="password" id="password" name="password" class="required" title="Minimum 8 karakter hosszú, tartalmazzon legalább 1db kisbetűt, nagybetűt és számot!"><br>
     <label for="favmeal">Kedvenc étel:</label><br>
     <input type="text" id="favmeal" name="favmeal"><br>
     <label>Hogy vagy?</label><br>
