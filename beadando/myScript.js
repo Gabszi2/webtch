@@ -15,14 +15,12 @@ function listAdd(){
 
 if (list.indexOf(input) ==-1) {
 
-
         var tmp = document.getElementById("countries").innerHTML += "<li>" + input + "</li>";
 }
 else {return alert("Már létezik!")}
 
-
-
 }
+
 function isFilled(fieldValue){
     if (fieldValue==""||fieldValue==" "){
 
@@ -136,4 +134,38 @@ function validate(){
     registerdEmail.push(email);
 
    alert("Regisztrált adatai:\n"+data);
+}
+
+function smolAme() {
+    $('#smolAme').css({left:0});
+    $('#smolAme').animate({
+        left: '+=1400',
+    }, {
+        duration: 1000,
+        easing: 'linear',
+        complete: smolAme
+    });
+}
+
+function hachama(){
+
+    $('#hachama').animate({left:'+=150',top:'+=150'},{
+        duration: 1000,
+        easing: 'linear',
+        complete:function (){$('#hachama').animate({top: '-=150'},{
+            duration:1000,
+            easing:'linear',
+            complete:function (){$('#hachama').animate({left:'-=150',top:'+=150'},{
+                duration: 1000,
+                easing: 'linear',
+                complete:function (){$('#hachama').animate({top:'-=150'},{
+                    duration:1000,
+                    easing:'linear',
+                    complete:hachama
+                })}
+            })}
+        })}
+
+    })
+
 }

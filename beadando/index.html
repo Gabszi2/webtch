@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="myStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="myScript.js"></script>
     <title>Beadando</title>
+
 </head>
 <body style="background-color: darkolivegreen">
 <p id="text">Ez a Web tecnológia beadandóm de mivel nem vagyok túl
     kreatív ezért a hobbiaimat fogom felhasználni a feladat teljesítésére. Ebből az okból kifolyólag lehet, hogy semminek sem lesz túl sok értelme, összefüggése.
     Végezetül pedig itt egy kis érdekes vélemény a szemüvegekről angolul egy magát rókának képzelő macskától:<br></p>
     <p class="boldItalic"><q id="hidden">Glasses are really versatile. First, you can have glasses-wearing girls take them off and suddenly become beautiful, or have girls wearing glasses flashing those cute grins, or have girls stealing the protagonist's glasses and putting them on like, "Haha, got your glasses!' That's just way too cute! Also, boys with glasses! I really like when their glasses have that suspicious looking gleam, and it's amazing how it can look really cool or just be a joke. I really like how it can fulfill all those abstract needs. Being able to switch up the styles and colors of glasses based on your mood is a lot of fun too! It's actually so much fun! You have those half rim glasses, or the thick frame glasses, everything! It's like you're enjoying all these kinds of glasses at a buffet. I really want Luna to try some on or Marine to try some on to replace her eyepatch. We really need glasses to become a thing in hololive and start selling them for HoloComi. Don't. You. Think. We. Really. Need. To. Officially. Give. Everyone. Glasses?</q> - Shirakami Fubuki </p>
-<button type="button" onclick="hideShow()">Kattincs ide ha látni akarod!</button>
+<button type="button" onclick="hideShow()" style="margin-bottom: 50px">Kattincs ide ha látni akarod!</button>
+<div>
+    <img id="smolAme" src="Smol_Ame.png" alt="Smol Ame run!"> <script>smolAme(true)</script>
+
 <table title="Ételek" class="boldItalic">
     <tr>
         <th>Név</th>
@@ -43,7 +48,10 @@
         <td>Egyesült királyság</td>
         <td><a href="https://en.wikipedia.org/wiki/Shepherd%27s_pie">Kattints ide! (angol)</a></td>
     </tr>
+
 </table>
+</div>
+
 
 <div>
 <h3>Melyik országokba szeretnénk utazni:</h3>
@@ -56,11 +64,13 @@
 
 </div>
 
+<img id="hachama" class="center" src="haachama.gif" alt="Hachama ááááá!"><script>hachama(true)</script>
+<img id="korone" class="center" src="korone.gif" alt="Hachama ááááá!"><script>hachama(true)</script>
 <form name="myForm">
     <p style="color: red">*kötelező</p>
-    <label for="lname">Keresztnév*:</label><br>
+    <label for="lname">Vezetéknév*:</label><br>
     <input type="text" id="lname" name="lname" class="required" title="Kezdődjön nagybetűvel és ne tartalmazzon szóközt!"><br>
-    <label for="fname">Vezetéknév*:</label><br>
+    <label for="fname">Keresztnév*:</label><br>
     <input type="text" id="fname" name="fname" class="required" title="Kezdődjön nagybetűvel és ne tartalmazzon szóközt!"><br>
     <label for="age">Kor*:</label><br>
     <input type="number" id="age" name="age" min="0" max="110" class="required" title="0-110"><br>
@@ -88,6 +98,8 @@
     <input type="text" id="email" name="email" class="required"><br>
     <input type="button" onclick="validate()" value="Submit">
 </form>
+
+
 
 </body>
 </html>
