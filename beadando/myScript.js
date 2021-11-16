@@ -169,3 +169,67 @@ function hachama(){
     })
 
 }
+
+function korone() {
+    var randomnumber = Math.floor(Math.random() * (8 - 1 + 1)) + 1;
+
+    switch (randomnumber) {
+        case 1:{
+            $('#korone').animate({left:'+=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 2:{
+            $('#korone').animate({left:'-=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 3:{
+            $('#korone').animate({top:'-=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 4:{
+            $('#korone').animate({top:'+=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 5:{
+            $('#korone').animate({left:'+=50px',top:'+=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 6:{
+            $('#korone').animate({left:'-=50px',top:'-=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 7:{
+            $('#korone').animate({left:'-=50px',top:'+=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+        case 8:{
+            $('#korone').animate({left:'+=50px',top:'-=50px'},{
+                duration:1000,
+                easing:'linear',
+                complete:korone
+            })
+        }
+    }
+
+}
