@@ -88,6 +88,8 @@ function validate(){
     var favMeal=document.getElementById("favmeal").value;
     var howRadios=document.getElementsByName("status");
     var email = document.getElementById("email").value;
+    var color=document.getElementById("color").value;
+    var date=document.getElementById("date").value;
 
     //Regisztrálva van e
     if (registerdEmail.includes(email))
@@ -95,8 +97,8 @@ function validate(){
         return alert("Ez az e-mail cím már regisztrálva van!");
     }
     //Required
-    if (!isFilled(lName)){emptyInputs.push("Keresztnév")}
-    if (!isFilled(fName)){emptyInputs.push("Vezetéknév")}
+    if (!isFilled(lName)){emptyInputs.push("Vezetéknév")}
+    if (!isFilled(fName)){emptyInputs.push("Keresztnév")}
     if (!isFilled(age)){emptyInputs.push("Kor")}
     if (!isFilled(password)){emptyInputs.push("Jelszó")}
     if (!isFilled(email)){emptyInputs.push("Email")}
@@ -106,8 +108,8 @@ function validate(){
     }
 
     //Valid
-    if (!validateLname()){wrongInputs.push("Keresztnév")}
-    if (!validateFname()){wrongInputs.push("Vezetéknév")}
+    if (!validateLname()){wrongInputs.push("Vezetéknév")}
+    if (!validateFname()){wrongInputs.push("Keresztnév")}
     if (age<0||age>110){wrongInputs.push("Kor")}
     if (!validatePassword()){wrongInputs.push("Jelszó")}
     if (!validateEmail()){wrongInputs.push("Email")}
@@ -132,6 +134,11 @@ function validate(){
     }
     data.push(email);
     registerdEmail.push(email);
+    data.push(color);
+   if (isFilled(date)){
+        data.push(date);
+    }
+
 
    alert("Regisztrált adatai:\n"+data);
 }

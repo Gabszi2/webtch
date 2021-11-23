@@ -87,3 +87,8 @@ form {
     position: relative;
     float: right;
 }
+div label[for]{
+    color: #FFFFFF;
+    font-style: italic;
+
+}
